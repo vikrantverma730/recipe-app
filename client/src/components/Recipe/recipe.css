@@ -1,0 +1,109 @@
+/** -- Recipe styling -- **/
+
+/** RecipeCard **/
+.cardMenu {
+    margin-bottom: 2rem !important;
+    display: flex;
+    max-width: 24rem !important;
+}
+
+.cardMenu .card-body {
+    background-color: var(--color-white) !important;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.cardMenu .card-body .card-title{
+    font-size: larger;
+    font-weight: var(--font-weight-bold);
+}
+
+.cardMenu .card-footer {
+    background-color: var(--color-white) !important;
+    border: none !important;
+}
+
+.cardMenu svg {
+    margin-right: 7px;
+}
+
+.recipeDescription {
+    border-bottom: 0.5px solid gray;
+}
+
+.recipeDescription svg {
+    margin: 1rem;
+}
+
+/** Recipe **/
+
+.recipe h4 {
+    color: var(--text-color-gray);
+    margin: 0;
+}
+
+.recipe ul {
+    padding: 0;
+}
+
+.recipeDiet {
+    background-color: var(--color-secondary);
+    border-radius: 20px;
+    padding: 8px;
+    color: var(--color-white);
+}
+
+.ingredients {
+    border-bottom: 0.5px solid gray;
+}
+
+.ingredientItems li {
+    list-style: none;
+    padding: 0.7rem;
+}
+
+.ingredientItems li input {
+    margin: 5px;
+}
+
+.instructions li {
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.instructions li svg {
+    margin: 9px;
+}
+
+/** Recipe large screens **/
+@media only screen and (min-width: 992px) {
+    .ingredientItems {
+        columns: 2;
+    }
+
+    .modal-body > .recipe {
+        margin: 0 !important;
+    }
+
+    .recipe ul {
+        padding-left: 2rem;
+    }
+}
+
+/** -- RecipeModal styling -- **/
+.modal-header {
+    height: 1rem;
+}
+
+.modal-header .close {
+    padding: 0.2rem 0.5rem;
+}
+
+.modal-backdrop.show
+{
+    opacity: 0.21;
+}
+
+.modal .recipeDetails {
+    padding: 0 .5rem !important;
+}
+

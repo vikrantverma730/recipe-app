@@ -1,0 +1,53 @@
+/** -- Profile styling -- */
+
+.planInfo, .accInfo, .deliveryInfo {
+    padding: 1rem;
+}
+
+.planInfo ul {
+    padding: 0;
+}
+
+.planInfo ul li {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.planInfo ul li .usrInfo {
+    text-align: start;
+}
+
+.settings .form-label {
+    font-weight: bold;
+}
+
+.settings header {
+    display: flex;
+    align-items: center;
+}
+
+.settings header svg {
+    margin-left: 5px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: var(--color-tertiary) !important;
+    color: var(--text-color-white) !important;
+}
+
+.settings a.nav-link {
+    color: #212529 !important;
+}
+
+.form-control-plaintext {
+    font-size: var(--font-size) !important;
+}
+
+/** Medium screens */
+@media only screen and (min-width: 992px) {
+  .planInfo, .accInfo, .deliveryInfo {
+      padding: 0 2rem;
+  }
+}

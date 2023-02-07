@@ -1,0 +1,85 @@
+/** -- Upcoming styling -- **/
+
+.userMenu .cardWrapper {
+    margin: 1rem 0;
+    display: flex;
+}
+
+.userMenu .card {
+    position: relative;
+    border: 3px solid rgba(0,0,0,.125);
+}
+
+.userMenu .card .card-title {
+    font-size: larger;
+    font-weight: var(--font-weight-bold);
+}
+
+.userMenu .card .card-body {
+    background-color: var(--color-white) !important;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.userMenu .card .card-footer {
+    background-color: var(--color-white) !important;
+    border: none !important;
+}
+
+.userMenu .selected {
+    border: 3px solid var(--color-tertiary);
+}
+
+.userMenu svg {
+    margin-right: 7px;
+}
+
+.userMenu img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.weekInfo .btn {
+    padding: .5rem 1rem !important;
+}
+
+.selectBtn, .unselectBtn {
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0;
+    width: max-content;
+    height: max-content;
+    padding: 0 !important
+}
+
+.selectBtn {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.selectedBtnDiv {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.selectBtn:hover, .unselectBtn:hover {
+    background-color: transparent !important;
+    border: none;
+    border-radius: 0;
+}
+
+.checkmark {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 49px;
+    height: 38.8px;
+}
+
+.suggestion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
